@@ -5,6 +5,37 @@ body {
     background-color: skyblue;
 }
 
+.h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.h3 {
+  color: rgb(0, 0, 0);
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.h4 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  animation: shadow 4s alternate infinite;
+}
+
+@keyframes shadow {
+  0% {text-shadow: black 0 0 10px;}
+  20% {text-shadow: rgb(255, 255, 255) 0 0 10px;}
+  40% {text-shadow: rgb(255, 0, 0) 0 0 10px;}
+  60% {text-shadow: rgb(51, 0, 255) 0 0 10px;}
+  80% {text-shadow: rgb(0, 242, 255) 0 0 10px;}
+  100% {text-shadow: rgb(0, 255, 21) 0 0 10px;}
+}
+
 span{
     color:red;
 }
@@ -15,68 +46,37 @@ span{
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 3rem;
-    background-color: black;
-    border: 2rem;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-image: url("../images/doctor-animated-132740-2519962.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    box-shadow: rgb(38, 57, 77) 30px 30px 30px 0px;
 }
-
-.h1 {
-    font-size: 2rem;
-    color: white;
-    text-transform: uppercase;
-	background-image: linear-gradient(to right top, #00ccff, #00ffff, #00b1f2, #004b8d, #3700ff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    font-family: 'Podo Moro', sans-serif;
-    font-size: 2rem;
-    animation: gradientAnim 5.5s ease  alternate infinite;
-}
-
-#height{
-    color: black;
-}
-
-.h01 {
-    
-}
-
-@keyframes gradientAnim {
-    to {
-      background-position: 100% top;
-    }
-  }
-
-.h01 {
-    font-family: 'Podo Moro', sans-serif;
-    font-size:  1.5rem;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-	background-image: linear-gradient(to right top, #00ccff, #00ffff, #00b1f2, #004b8d, #3700ff);
-    background-size: 35% auto;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    font-family: 'Podo Moro', sans-serif;
-    animation: gradientAnim 5.5s ease  alternate infinite;
-}
-
 
 @import url('https://fonts.cdnfonts.com/css/podo-moro');
 
 input{
     outline: none;
     border: none;
-    padding: 1.5rem;
-    color: black;
+    padding: .5rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Podo Moro', sans-serif;
+    font-size: 1rem;
 }
 
 button{
     padding: .5rem;
-    border: .25rem solid rgb(0, 115, 255);
-    background-color: black;
+    border-radius: .25rem solid rgb(0, 115, 255);
+    background-color: rgb(0, 119, 255);
     display: block;
     margin-top: 10%;
     cursor: pointer;
     transition: 0.5s;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-family: 'Podo Moro', sans-serif;
+    font-size: 1.4rem;
 }
 
 button:hover {
